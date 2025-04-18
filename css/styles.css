@@ -1,0 +1,206 @@
+/*Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap*/
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime Bold", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+body {
+	background: url("../images/background.png") no-repeat fixed top center;
+	background-size: cover;
+}
+
+/*NAV BACKGROUND
+The .bg-dark controls the color of the navigation bar at top*/
+.bg-dark {
+  background-color: rgba(45, 109, 149, 1) !important;
+	padding: 0;
+}
+/*The .bg-light controls the background around the button images */
+.bg-light {
+  background: none !important;
+}
+
+/*This controls the background around the main headline and deck */
+section.jumbotron.text-center {
+  background: none !important;
+}
+/*This controls the background behind the text underneath the button images */
+.card-body {
+  background-color: rgba(45, 109, 149, 0.5) !important;
+	padding: 10px 5%;
+}
+/*This styles your headshot image to be round with a shadow */
+.bioimage {
+float: left;
+margin-right: 20px;
+border-radius: 50%;
+border: 2px solid white !important;
+box-shadow: 5px 5px 5px 5px rgba(50, 50, 50, 0.4);
+}
+
+/*TYPOGRAPHY*/
+/*This style targets all the display text with the main Google display font*/
+
+h4.contact, h1.jumbotron-heading, .navbar-brand, .list-unstyled  {
+  font-family: "Special Elite", sans-serif;
+  font-weight: 700;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h4 {
+	text-align: center;
+}
+
+/*This rule styles all the display type that isn't bold*/
+p.lead, .my-2, .card-text, footer {
+font-family: "Courier Prime", sans-serif;
+}
+
+/*This rule targets your first/last name and your About text*/
+.navbar-brand, h4.contact {
+  font-weight: 700;
+  font-size: 1.3rem;
+	color: white !important;
+}
+
+/*This rule targets the About Me explanation*/
+p.text-muted {
+  font-family: 'Courier Prime', serif;
+  font-size: 1.1rem;
+  line-height: 2.0rem;
+	color: white !important;
+}
+
+/*This rule targets the main h1 heading*/
+  h1.jumbotron-heading {
+    font-size: 2.5rem;
+		margin-top: 1rem;
+  }
+
+  /*This rule targets the type below the main heading*/
+p.lead {
+  font-size: 1.3rem;
+}
+  .my-2, .card-text {
+    font-size: 1rem;
+}
+
+/*BUTTONS
+/*This turns off the three-line "more" button's blue outline*/
+button:focus {
+	outline: none;
+}
+
+/*This controls the Font Awesome spacing*/
+i {
+  margin: .5rem;
+}
+
+/*This allows the Font Awesome icons (Twitter, Linked In) to float next to each other on small screens instead of being stacked*/
+li {
+	float: left;
+}
+
+/*JUMBOTRON SPACING
+This controls the spacing and background color for the entire jumbotron*/
+.jumbotron {
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+/*If you have several rows of jumbotron items, this rule determines the last one will have a margin of 0. It is a "conditional" or pseudo class*/
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+/*This rule gives the jumbotron heading a 300 weight*/
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+/*This rule gives the jumbotron container a max width*/
+.jumbotron .container {
+  max-width: 50rem;
+}
+
+/*This style controls link colors*/
+a {
+	color: black;
+}
+
+/*This gets rid of the underline on a link when it is hovered over*/
+a:hover {
+	color: gray;
+	text-decoration: none;
+}
+
+
+img:hover {
+  transform: scale(1.25) perspective(1px)
+}
+/* this was my added code ^ it makes the pictures grow when you hover on them
+/*OTHER MEDIA QUERIES—Adjust them as you preview the buildout on different screens*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+  .jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
+/*When on larger screen, this makes Font Awesome icons stack on top of each other */
+	li {
+		float: none;
+	}
+}
+
+/*Embedresponsively code for Youtube video*/
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
